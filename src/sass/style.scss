@@ -1,11 +1,19 @@
-@import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import './libs/bootstrap-reboot.min'; //библиотека bootstrap
+@import './libs/animate';       // анимации
+@import './base/fonts';         // шрифты
+@import './base/mixins';        // миксины
+@import './base/variables';     // переменные
+@import './base/animations';    // работа с анимациями
 
-@import 'base/variables';
-@import 'base/mixins';
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
+// стили для сайта(секций)
+@import './blocks/header';
+
+
+// медиа запросы
+@import './base/media';
 
